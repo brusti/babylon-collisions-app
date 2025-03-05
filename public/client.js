@@ -23,12 +23,12 @@ const createScene = async () => {
     materials.bundhose.diffuseColor = new BABYLON.Color3(0.8, 0.1, 0.1); // Red
     
     try {
-        // Load models
+        // Load modelsz
         const models = {
-            shoes: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "DA_Arbeitsschuhe.glb", scene),
-            blouse: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "DA_BB_Damenbluse_3_4A.glb", scene),
-            kittle: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "DA_DI_Kittel_Revkrg_lgA.glb", scene),
-            bundhose: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "DA_EUC_Bundhose.glb", scene)
+            shoes: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "shoes.glb", scene),
+            blouse: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "blouse.glb", scene),
+            kittle: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "kittle.glb", scene),
+            bundhose: await BABYLON.SceneLoader.ImportMeshAsync("", "/models/", "trousers.glb", scene)
         };
 
         // Apply materials and position models
